@@ -23,7 +23,7 @@
      
      
          
-     
+  
      
      <a href="#" class="loadMorePosts">Load More Posts</a>
      
