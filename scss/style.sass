@@ -8,6 +8,7 @@ $background-feed: #ececec;
 $background-blue: #2b2d32;
 $card-color: #ffffff;
 $header-white: #ffffff;
+$header-black: #000000;
 $hashtag: #898989;
 $pipe: #e2e2e2;
 
@@ -66,13 +67,8 @@ body {
 					top: calc(50% - 50px); 
 					left: calc(50% - 45px);
 				}		
-			}
-		}	
-	}
-}
-
-
-.meta { margin-top:-43px; padding-left: 6%; position:relative; }
+		
+	.meta { margin-top:-43px; padding-left: 6%; position:relative; }
 
 .meta {
 	.profile {
@@ -134,33 +130,153 @@ body {
 	}
 }
 
+		}
+	}
+}
+
+
+
 .share {
 	.pipe {
 		height:1px; 
 		width:95%;
 		text-align:center;
 		background-color: $pipe;
-		margin-bottom:4%;
+		margin-bottom:2%;
 		}
 
 	.hit {
 		float:left;
-		padding: 1% 12% 2% 12%;
 		font-size:12px;
+		width:33%;
+		text-align:center;
 		}
 	.comment {
 		float:left;
-		padding: 1% 12% 2% 12%;
 		font-size:12px;
+		width:33%;
+		text-align:center;
 		}
 	.share {
 		float:left;
-		padding: 1% 12% 2% 12%;
 		font-size:12px;
+		width:33%;
+		text-align:center;
 		}		
 }
 
 .share img { width:5%; }
 
+			}
 
 
+
+/** TRENDING CARD POSTS **/
+
+body {
+	font-size: 14px;	
+	font-family: arial;
+	margin: 0;
+	padding: 0;
+	background-color:$background-feed;
+	section {
+		float: left;
+		position: relative;
+		width: 100%;	
+	}
+	.feed {
+		width:100%;
+		position: relative;
+		.post {
+			box-sizing: border-box;
+			float: left;
+			width: 100%;
+			background-color:$card-color;
+			ul, li {
+				list-style-type: none;
+				float: none;
+				padding: 0;
+				margin: 0;
+				position: relative;
+			}
+			&.article {
+				position: relative;
+				.video-play-overlay {
+					position: absolute;
+					top: 0;
+					left: 0;
+					background-color: rgba(255,0,0,.5);
+					width: 100%;
+					height: 100%;
+					z-index: 2;	
+				}	
+				.background-image {
+					padding-top:56%;
+					background-size:cover;
+					background-repeat:no-repeat;
+					}		
+					
+	
+.meta { padding-left: 6%; position:relative; }
+
+.meta {
+	.profile {
+		width:100%;
+		padding-top:5%;
+		}
+	.user-image { 
+		width:70px;
+		height:70px;
+		background: black;
+		-moz-border-radius: 50px;
+		-webkit-border-radius: 50px;
+		border-radius: 50px;
+		position:relative;
+		float:left;
+		box-sizing:border-box;
+		z-index:3;
+	}
+	
+	
+	.name {
+			font-size:27px;
+			color: $header-black;
+			position:relative;
+			z-index:3;
+			float:left;
+			width: calc(100% - 70px);
+			margin-top:12px;
+			box-sizing:border-box;
+		}
+	.tags {
+			background-color:white;
+			position:relative;
+			text-transform:uppercase;
+			float:left;
+			box-sizing:border-box;
+			}
+	.time {
+			position:relative;
+			}		
+	.title {
+			font-size:16px;
+			position:relative;
+			clear:both;
+			width:100%;
+			box-sizing:border-box;
+			padding:2%;
+		}
+	
+	.hashtags {
+			font-size:13px;
+			color: $hashtag;
+			letter-spacing:1px;
+			position:relative;
+			padding-bottom:20px;
+			box-sizing:border-box;
+			}	
+		}
+	}
+}
+}
+}
