@@ -1,0 +1,31 @@
+/* Sass Document */
+/************* GLOBAL **************/
+/* COLORS */
+/* FONTS */
+/************************** MOBILE **************************/
+/** MAIN FEATURED POST **/
+body { font-size: 14px; font-family: arial; margin: 0; padding: 0; background-color: #ececec; }
+body section { float: left; position: relative; width: 100%; }
+body .feed { width: 100%; position: relative; }
+body .feed .post { box-sizing: border-box; float: left; width: 100%; background-color: #ffffff; }
+body .feed .post ul, body .feed .post li { list-style-type: none; float: none; padding: 0; margin: 0; position: relative; }
+body .feed .post.video { position: relative; }
+body .feed .post.video .video-play-overlay { position: absolute; top: 0; left: 0; background-color: rgba(255, 0, 0, 0.5); width: 100%; height: 100%; z-index: 2; }
+body .feed .post.video .background-image { padding-top: 56%; }
+body .feed .post.video .video-play-overlay img { max-width: 80px; position: relative; top: calc(50% - 50px); left: calc(50% - 45px); }
+
+.meta { margin-top: -43px; padding-left: 6%; position: relative; }
+
+.meta .profile { width: 100%; }
+.meta .user-image { width: 90px; height: 90px; background: black; -moz-border-radius: 50px; -webkit-border-radius: 50px; border-radius: 50px; position: relative; float: left; box-sizing: border-box; z-index: 3; }
+.meta .name { font-size: 27px; color: #ffffff; position: relative; z-index: 3; float: left; width: calc(98% - 90px); left: 3%; box-sizing: border-box; }
+.meta .tags { color: #ffffff; background-color: black; position: relative; padding: 6px; width: 50px; z-index: 3; text-align: center; text-transform: uppercase; font-size: 10px; float: left; left: 3%; box-sizing: border-box; }
+.meta .title { font-size: 27px; position: relative; clear: both; width: 100%; padding: 12px 0 25px 0; box-sizing: border-box; }
+.meta .hashtags { font-size: 13px; color: #898989; letter-spacing: 1px; position: relative; padding-bottom: 20px; box-sizing: border-box; }
+
+.share .pipe { height: 1px; width: 95%; text-align: center; background-color: #e2e2e2; margin-bottom: 4%; }
+.share .hit { float: left;  font-size: 12px; }
+.share .comment { float: left;  font-size: 12px; }
+.share .share { float: left;  font-size: 12px; }
+
+.share img { width: 10%; }
