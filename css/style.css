@@ -41,7 +41,8 @@ body {
         body .feed .post.video .background-image {
           padding-top: 56%;
           background-size: cover;
-          background-repeat: no-repeat; }
+          background-repeat: no-repeat;
+          background-image: url("http://placehold.it/350x200"); }
         body .feed .post.video .video-play-overlay img {
           max-width: 80px;
           position: relative;
@@ -162,7 +163,8 @@ body {
         body .feed .post.article .background-image {
           padding-top: 56%;
           background-size: cover;
-          background-repeat: no-repeat; }
+          background-repeat: no-repeat;
+          background-image: url("http://placehold.it/350x200"); }
         body .feed .post.article .meta {
           padding-left: 6%;
           position: relative; }
