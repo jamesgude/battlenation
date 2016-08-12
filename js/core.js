@@ -4,6 +4,7 @@ var app = {
 				url: 'post.html',
 				success: function(response) {
 					$(selector).append(response);
+					console.log(response);
 				}
 			})			
 		}

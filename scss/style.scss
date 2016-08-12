@@ -17,6 +17,10 @@ $button: rgba(255,0,0,1);
 
 /* FONTS */
 
+
+
+/********************************************************************/
+
 body {
 	font-size: 14px;	
 	font-family: arial;
@@ -41,6 +45,9 @@ body {
 	letter-spacing:1px;
 	}
 	
+/*******************************************************************************/	
+/****************************** GLOBAL POST ************************************/	
+/*******************************************************************************/
 	
 	.post {
 		box-sizing: border-box;
@@ -163,6 +170,57 @@ body {
 						}	
 					}
 	
+/*******************************************************************************/	
+/****************************** DEFAULT POST ***********************************/	
+/*******************************************************************************/
+	
+	.post {
+		&.default {
+			position: relative;
+							.video-play-overlay img { 
+								display:none;
+								}	
+							.meta { 
+								margin-top:0px;
+								padding-left: 6%;
+								}
+							.profile {
+								width:100%;
+								padding-top:5%;
+								}
+							.user-image { 
+								width:70px;
+								height:70px;
+								}
+							.name {
+								font-size:27px;
+								color: $header-black;
+								width: calc(100% - 70px);
+								margin-top:12px;
+								}
+							.title {
+								font-size:16px;
+								padding:2%;
+								}
+							.hashtags {
+								display:block;
+									}	
+							.time {
+								position:relative;
+								display:block;
+								}	
+							.tags {
+								display:none;
+									}			
+							.share {
+								display:block;
+							}
+						}
+					}		
+					
+/*******************************************************************************/	
+/****************************** VIDEO POST *************************************/	
+/*******************************************************************************/
 	
 		.post{
 			&.video {
@@ -202,75 +260,15 @@ body {
 						}
 					}
 				}
-	
-	
-	
-	
-	
-	
-	.post {
-		&.default {
-			position: relative;
-							.video-play-overlay img { 
-								display:none;
-								}	
-							.meta { 
-								margin-top:0px;
-								padding-left: 6%;
-								}
-							.profile {
-								width:100%;
-								padding-top:5%;
-								}
-							.user-image { 
-								width:70px;
-								height:70px;
-								}
-							.name {
-								font-size:27px;
-								color: $header-black;
-								width: calc(100% - 70px);
-								margin-top:12px;
-								}
-							.title {
-								font-size:16px;
-								padding:2%;
-								}
-							.hashtags {
-								display:block;
-								
-									}	
-							.time {
-								position:relative;
-								display:block;
-								}	
-							.tags {
-								display:none;
-									}			
-							.share {
-								display:block;
-							}
-						}
-					}
 					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
+/*******************************************************************************/	
+/****************************** LIST POST **************************************/	
+/*******************************************************************************/
 					
 					.post {
 						&.list {
 							position: relative;
 								ul { 
-									
 									display:inline-block;
 									float:left;
 									width:100%;
@@ -299,7 +297,6 @@ body {
 												background-repeat:no-repeat;
 												background-image:url('http://placehold.it/350x200');
 												}
-					
 											.meta { 
 												margin-top:10px;
 												padding-left: 0%;
@@ -329,7 +326,6 @@ body {
 												font-size:10px;
 												display:block;
 												left:2%;
-												
 													}	
 											.time {
 												position:relative;
@@ -344,39 +340,22 @@ body {
 										}
 									}
 					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
+/*******************************************************************************/	
+/***************************** CAROUSEL POST ***********************************/	
+/*******************************************************************************/
+
 	.post {
 		&.carousel {
 			position: relative;
+				ul{
+					width:100%;
+					float:left;
+					display:inline-block;
+				}
+					li {
+						width:40%;
+						float:left;	
+					}
 							.video-play-overlay {
 								display:none;
 								}	
@@ -405,7 +384,6 @@ body {
 								left:2%;
 								margin-top:12px;
 								padding:0 0 10% 0;
-								
 								}
 							.title {
 								font-size:16px;
@@ -414,7 +392,6 @@ body {
 								}
 							.hashtags {
 								display:none;
-								
 									}	
 							.time {
 								position:relative;
@@ -427,91 +404,4 @@ body {
 								display:none;
 							}
 						}
-					}				
-					
-					
-					
-					
-					
-	
-
-			
-	
-		
-	
-					
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	/*
-	
-	
-	.post.photo {
-	}
-	
-	.carousel {
-		.post {
-			width: 33%;	
-		}
-	}
-	.featured {
-		.post {
-			width: 100%;	
-			.social {
-				display: none;	
-			}
-		}
-	}
-	.timeline {
-		.post {
-				
-		}
-	}
-} */
-
-
-
-			
-			
-		
-	
-
-			
-
-
-
-
+					}			

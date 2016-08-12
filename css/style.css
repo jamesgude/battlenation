@@ -2,6 +2,7 @@
 /************* GLOBAL **************/
 /* COLORS */
 /* FONTS */
+/********************************************************************/
 body {
   font-size: 14px;
   font-family: arial;
@@ -23,6 +24,9 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px; }
 
+/*******************************************************************************/
+/****************************** GLOBAL POST ************************************/
+/*******************************************************************************/
 .post {
   box-sizing: border-box;
   float: left;
@@ -127,33 +131,9 @@ body {
       width: 33%;
       text-align: center; }
 
-.post.video {
-  position: relative; }
-  .post.video .video-play-overlay img {
-    display: block; }
-  .post.video .meta {
-    margin-top: -43px;
-    padding-left: 6%; }
-  .post.video .user-image {
-    width: 90px;
-    height: 90px; }
-  .post.video .name {
-    font-size: 27px;
-    color: #ffffff;
-    width: calc(98% - 90px);
-    left: 3%; }
-  .post.video .title {
-    font-size: 27px;
-    padding: 12px 0 25px 0; }
-  .post.video .time {
-    display: none; }
-  .post.video .hashtags {
-    display: block; }
-  .post.video .tags {
-    display: block; }
-  .post.video .share {
-    display: block; }
-
+/*******************************************************************************/
+/****************************** DEFAULT POST ***********************************/
+/*******************************************************************************/
 .post.default {
   position: relative; }
   .post.default .video-play-overlay img {
@@ -185,6 +165,39 @@ body {
   .post.default .share {
     display: block; }
 
+/*******************************************************************************/
+/****************************** VIDEO POST *************************************/
+/*******************************************************************************/
+.post.video {
+  position: relative; }
+  .post.video .video-play-overlay img {
+    display: block; }
+  .post.video .meta {
+    margin-top: -43px;
+    padding-left: 6%; }
+  .post.video .user-image {
+    width: 90px;
+    height: 90px; }
+  .post.video .name {
+    font-size: 27px;
+    color: #ffffff;
+    width: calc(98% - 90px);
+    left: 3%; }
+  .post.video .title {
+    font-size: 27px;
+    padding: 12px 0 25px 0; }
+  .post.video .time {
+    display: none; }
+  .post.video .hashtags {
+    display: block; }
+  .post.video .tags {
+    display: block; }
+  .post.video .share {
+    display: block; }
+
+/*******************************************************************************/
+/****************************** LIST POST **************************************/
+/*******************************************************************************/
 .post.list {
   position: relative; }
   .post.list ul {
@@ -243,8 +256,18 @@ body {
   .post.list .share {
     display: none; }
 
+/*******************************************************************************/
+/***************************** CAROUSEL POST ***********************************/
+/*******************************************************************************/
 .post.carousel {
   position: relative; }
+  .post.carousel ul {
+    width: 100%;
+    float: left;
+    display: inline-block; }
+  .post.carousel li {
+    width: 40%;
+    float: left; }
   .post.carousel .video-play-overlay {
     display: none; }
   .post.carousel .background-image {
@@ -280,31 +303,5 @@ body {
     display: none; }
   .post.carousel .share {
     display: none; }
-
-	/*
-	
-	
-	.post.photo {
-	}
-	
-	.carousel {
-		.post {
-			width: 33%;	
-		}
-	}
-	.featured {
-		.post {
-			width: 100%;	
-			.social {
-				display: none;	
-			}
-		}
-	}
-	.timeline {
-		.post {
-				
-		}
-	}
-} */
 
 /*# sourceMappingURL=style.css.map */
