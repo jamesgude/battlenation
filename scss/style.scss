@@ -15,26 +15,265 @@ $post-overlay: rgba(255,0,0,.5);
 
 /* FONTS */
 
-.feed {
-	.post {
-		float: left;	
-		width: 100%;
-		.social {
-			height: 50px;
+body {
+	font-size: 14px;	
+	font-family: arial;
+	margin: 0;
+	padding: 0;
+	background-color:$background-feed;
+		section {
+			float: left;
+			position: relative;
+			width: 100%;	
+			}
 		}
-		.playbuttonoverlay {
-			display: none;	
-		}
-	}
 	
-	.post.article {
+	
+	.post {
+		box-sizing: border-box;
+		float: left;
+		width: 100%;
+		background-color:$card-color;
+			ul, li {
+				list-style-type: none;
+				float: none;
+				padding: 0;
+				margin: 0;
+				position: relative;
+				}
+				.video-play-overlay {
+						position: absolute;
+						top: 0;
+						left: 0;
+						background-color: $post-overlay;
+						width: 100%;
+						height: 100%;
+						z-index: 2;	
+						}	
+					.background-image {
+						padding-top:56%;
+						background-size:cover;
+						background-repeat:no-repeat;
+						background-image:url('http://placehold.it/350x200');
+						}
+					.video-play-overlay img { 
+						max-width:80px; 
+						position:relative; 
+						top: calc(50% - 50px); 
+						left: calc(50% - 45px);
+						}	
+					.meta { 
+						margin-top:-43px;
+						padding-left: 6%;
+						position:relative;
+						}
+					.user-image { 
+						background: black;
+						-moz-border-radius: 50px;
+						-webkit-border-radius: 50px;
+						border-radius: 50px;
+						position:relative;
+						float:left;
+						box-sizing:border-box;
+						z-index:3;
+							}
+					.name {
+						position:relative;
+						z-index:3;
+						float:left;
+						box-sizing:border-box;
+							}
+					.title {
+						position:relative;
+						clear:both;
+						width:100%;
+						box-sizing:border-box;
+							}
+					.hashtags {
+						font-size:13px;
+						color: $hashtag;
+						letter-spacing:1px;
+						position:relative;
+						padding-bottom:20px;
+						box-sizing:border-box;
+						display:block;
+							}	
+					.tags {
+						color:$header-white;
+						background-color:black;
+						position:relative;
+						padding:6px;
+						width:50px;
+						z-index:3;
+						text-align:center;
+						text-transform:uppercase;
+						font-size:10px;
+						float:left;
+						left: 3%;
+						box-sizing:border-box;
+							}			
+					.share {
+						display:block;
+							.pipe {
+								height:1px; 
+								width:95%;
+								text-align:center;
+								background-color: $pipe;
+								margin-bottom:2%;
+								}
+							.hit {
+								float:left;
+								font-size:12px;
+								width:33%;
+								text-align:center;
+								}
+							.comment {
+								float:left;
+								font-size:12px;
+								width:33%;
+								text-align:center;
+								}
+							.share {
+								float:left;
+								font-size:12px;
+								width:33%;
+								text-align:center;		
+							}
+						}	
+					}
+	
+	
+		.post{
+			&.video {
+				position: relative;
+						.video-play-overlay img { 
+							display:block;
+							}	
+						.meta { 
+							margin-top:-43px;
+							padding-left: 6%;
+							}
+						.user-image { 
+							width:90px;
+							height:90px;
+							}
+						.name {
+							font-size:27px;
+							color: $header-white;
+							width: calc(98% - 90px);
+							left: 3%;
+							}
+						.title {
+							font-size:27px;
+							padding:12px 0 25px 0;
+							}
+						.hashtags {
+							display:block;
+								}	
+						.tags {
+							display:block;
+								}			
+						.share {
+							display:block;
+						}
+					}
+				}
+	
+	
+	
+	
+	
+	
+	.post {
+		&.default {
+			position: relative;
+							.video-play-overlay img { 
+								display:none;
+								}	
+							.meta { 
+								margin-top:0px;
+								padding-left: 6%;
+								}
+							.profile {
+								width:100%;
+								padding-top:5%;
+								}
+							.user-image { 
+								width:70px;
+								height:70px;
+								}
+							.name {
+								font-size:27px;
+								color: $header-white;
+								width: calc(100% - 70px);
+								left: 3%;
+								margin-top:12px;
+								}
+							.title {
+								font-size:16px;
+								padding:2%;
+								}
+							.hashtags {
+								display:block;
+									}	
+							.time {
+								position:relative;
+								}	
+							.tags {
+								display:block;
+									}			
+							.share {
+								display:block;
+							}
+						}
+					}
+	
+
 			
-	}
-	.post.video {
-		.playbuttonoverlay {
-			display: block;	
-		}
-	}
+	
+		
+	
+					
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*
+	
+	
 	.post.photo {
 	}
 	
@@ -50,287 +289,22 @@ $post-overlay: rgba(255,0,0,.5);
 				display: none;	
 			}
 		}
-		
 	}
 	.timeline {
 		.post {
 				
 		}
 	}
-	
-}
+} */
 
-/************************** MOBILE **************************/
 
-/** MAIN FEATURED POST **/
-body {
-	font-size: 14px;	
-	font-family: arial;
-	margin: 0;
-	padding: 0;
-	background-color:$background-feed;
-	section {
-		float: left;
-		position: relative;
-		width: 100%;	
-	}
-	.feed {
-		width:100%;
-		position: relative;
-		.post {
-			box-sizing: border-box;
-			float: left;
-			width: 100%;
-			background-color:$card-color;
-			ul, li {
-				list-style-type: none;
-				float: none;
-				padding: 0;
-				margin: 0;
-				position: relative;
-			}
-			&.video {
-				position: relative;
-				.video-play-overlay {
-					position: absolute;
-					top: 0;
-					left: 0;
-					background-color: $post-overlay;
-					width: 100%;
-					height: 100%;
-					z-index: 2;	
-				}	
-				.background-image {
-					padding-top:56%;
-					background-size:cover;
-					background-repeat:no-repeat;
-					background-image:url('http://placehold.it/350x200');
-					}
-				.video-play-overlay img { 
-					max-width:80px; 
-					position:relative; 
-					top: calc(50% - 50px); 
-					left: calc(50% - 45px);
-				}		
+
+			
+			
 		
-	.meta { margin-top:-43px; padding-left: 6%; position:relative; }
-
-			.meta {
-				.profile {
-					width:100%;
-					}
-				.user-image { 
-					width:90px;
-					height:90px;
-					background: black;
-					-moz-border-radius: 50px;
-					-webkit-border-radius: 50px;
-					border-radius: 50px;
-					position:relative;
-					float:left;
-					box-sizing:border-box;
-					z-index:3;
-				}
-				
-				
-				.name {
-						font-size:27px;
-						color: $header-white;
-						position:relative;
-						z-index:3;
-						float:left;
-						width: calc(98% - 90px);
-						left: 3%;
-						box-sizing:border-box;
-					}
-				.tags {
-						color:$header-white;
-						background-color:black;
-						position:relative;
-						padding:6px;
-						width:50px;
-						z-index:3;
-						text-align:center;
-						text-transform:uppercase;
-						font-size:10px;
-						float:left;
-						left: 3%;
-						box-sizing:border-box;
-						}
-				.title {
-						font-size:27px;
-						position:relative;
-						clear:both;
-						width:100%;
-						padding:12px 0 25px 0;
-						box-sizing:border-box;
-					}
-				.hashtags {
-						font-size:13px;
-						color: $hashtag;
-						letter-spacing:1px;
-						position:relative;
-						padding-bottom:20px;
-						box-sizing:border-box;
-				}
-			}
-
-		}
-	}
-}
-
-
-
-.share {
-	.pipe {
-		height:1px; 
-		width:95%;
-		text-align:center;
-		background-color: $pipe;
-		margin-bottom:2%;
-		}
-
-	.hit {
-		float:left;
-		font-size:12px;
-		width:33%;
-		text-align:center;
-		}
-	.comment {
-		float:left;
-		font-size:12px;
-		width:33%;
-		text-align:center;
-		}
-	.share {
-		float:left;
-		font-size:12px;
-		width:33%;
-		text-align:center;
-		}		
-}
-
-.share img { width:5%; }
-
-			}
-
-
-
-/** TRENDING CARD POSTS **/
-
-body {
-	font-size: 14px;	
-	font-family: arial;
-	margin: 0;
-	padding: 0;
-	background-color:$background-feed;
-	section {
-		float: left;
-		position: relative;
-		width: 100%;	
-	}
-	.feed {
-		width:100%;
-		position: relative;
-		.post {
-			box-sizing: border-box;
-			float: left;
-			width: 100%;
-			background-color:$card-color;
-			ul, li {
-				list-style-type: none;
-				float: none;
-				padding: 0;
-				margin: 0;
-				position: relative;
-			}
-			&.article {
-				position: relative;
-				.video-play-overlay {
-					position: absolute;
-					top: 0;
-					left: 0;
-					background-color: $post-overlay;
-					width: 100%;
-					height: 100%;
-					z-index: 2;	
-				}	
-				.background-image {
-					padding-top:56%;
-					background-size:cover;
-					background-repeat:no-repeat;
-					background-image:url('http://placehold.it/350x200');
-					}		
-					
 	
-		.meta { padding-left: 6%; position:relative; }
-		
-		.meta {
-			.profile {
-				width:100%;
-				padding-top:5%;
-				}
-			.user-image { 
-				width:70px;
-				height:70px;
-				background: black;
-				-moz-border-radius: 50px;
-				-webkit-border-radius: 50px;
-				border-radius: 50px;
-				position:relative;
-				float:left;
-				box-sizing:border-box;
-				z-index:3;
-			}
+
 			
-			
-			.name {
-					font-size:27px;
-					color: $header-black;
-					position:relative;
-					z-index:3;
-					float:left;
-					width: calc(100% - 70px);
-					margin-top:12px;
-					box-sizing:border-box;
-				}
-			.tags {
-					background-color:white;
-					position:relative;
-					text-transform:uppercase;
-					float:left;
-					box-sizing:border-box;
-					}
-			.time {
-					position:relative;
-					}		
-			.title {
-					font-size:16px;
-					position:relative;
-					clear:both;
-					width:100%;
-					box-sizing:border-box;
-					padding:2%;
-				}
-			
-			.hashtags {
-					font-size:13px;
-					color: $hashtag;
-					letter-spacing:1px;
-					position:relative;
-					padding-bottom:20px;
-					box-sizing:border-box;
-					}	
-				}
-			}
-		}
-	}
-}
-
-
-
-
-
 
 
 
