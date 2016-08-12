@@ -7,7 +7,6 @@
 <script src="/js/core.js" async="async"></script>
 </head>
 <body id="index" class="home">
- 
  <div class="feed">
      <!------------------------- MAIN FEATURED POST ------------------------------->
     <section id="featured">
