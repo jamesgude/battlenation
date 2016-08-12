@@ -15,6 +15,50 @@ $post-overlay: rgba(255,0,0,.5);
 
 /* FONTS */
 
+.feed {
+	.post {
+		float: left;	
+		width: 100%;
+		.social {
+			height: 50px;
+		}
+		.playbuttonoverlay {
+			display: none;	
+		}
+	}
+	
+	.post.article {
+			
+	}
+	.post.video {
+		.playbuttonoverlay {
+			display: block;	
+		}
+	}
+	.post.photo {
+	}
+	
+	.carousel {
+		.post {
+			width: 33%;	
+		}
+	}
+	.featured {
+		.post {
+			width: 100%;	
+			.social {
+				display: none;	
+			}
+		}
+		
+	}
+	.timeline {
+		.post {
+				
+		}
+	}
+	
+}
 
 /************************** MOBILE **************************/
 

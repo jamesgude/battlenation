@@ -2,6 +2,22 @@
 /************* GLOBAL **************/
 /* COLORS */
 /* FONTS */
+.feed .post {
+  float: left;
+  width: 100%; }
+  .feed .post .social {
+    height: 50px; }
+  .feed .post .playbuttonoverlay {
+    display: none; }
+.feed .post.video .playbuttonoverlay {
+  display: block; }
+.feed .carousel .post {
+  width: 33%; }
+.feed .featured .post {
+  width: 100%; }
+  .feed .featured .post .social {
+    display: none; }
+
 /************************** MOBILE **************************/
 /** MAIN FEATURED POST **/
 body {
