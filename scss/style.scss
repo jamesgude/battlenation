@@ -9,9 +9,11 @@ $background-blue: #2b2d32;
 $card-color: #ffffff;
 $header-white: #ffffff;
 $header-black: #000000;
+$time: #a5a5a5;
 $hashtag: #898989;
 $pipe: #e2e2e2;
 $post-overlay: rgba(255,0,0,.5);
+$button: rgba(255,0,0,1);
 
 /* FONTS */
 
@@ -27,6 +29,17 @@ body {
 			width: 100%;	
 			}
 		}
+		
+.loadMorePosts { 
+	position:relative; 
+	left:22%; 
+	background-color:$button; 
+	padding:20px 40px 20px 40px; 
+	color:#fff; 
+	text-decoration:none; 
+	text-transform:uppercase; 
+	letter-spacing:1px;
+	}
 	
 	
 	.post {
@@ -111,7 +124,15 @@ body {
 						float:left;
 						left: 3%;
 						box-sizing:border-box;
-							}			
+							}	
+					.time {
+						display:block;
+						position:relative;
+						font-size:10px;
+						text-transform:uppercase;
+						letter-spacing:1px;
+						color:$time;
+						}				
 					.share {
 						display:block;
 							.pipe {
@@ -167,6 +188,9 @@ body {
 							font-size:27px;
 							padding:12px 0 25px 0;
 							}
+						.time {
+							display:none;
+							}	
 						.hashtags {
 							display:block;
 								}	
@@ -204,9 +228,8 @@ body {
 								}
 							.name {
 								font-size:27px;
-								color: $header-white;
+								color: $header-black;
 								width: calc(100% - 70px);
-								left: 3%;
 								margin-top:12px;
 								}
 							.title {
@@ -215,12 +238,14 @@ body {
 								}
 							.hashtags {
 								display:block;
+								
 									}	
 							.time {
 								position:relative;
+								display:block;
 								}	
 							.tags {
-								display:block;
+								display:none;
 									}			
 							.share {
 								display:block;

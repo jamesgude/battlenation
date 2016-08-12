@@ -17,9 +17,6 @@
      <!----------------------------- TRENDING CARD POST TYPE --------------------------------------->
      
     <section id="trending" style="padding-top: 10%;">
-    <jsp:include page="post.html" />
-    <jsp:include page="post.html" />
-    <jsp:include page="post.html" />
     </section><!-- END MAIN FEATURED POST -->
      
      

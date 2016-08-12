@@ -13,6 +13,16 @@ body {
     position: relative;
     width: 100%; }
 
+.loadMorePosts {
+  position: relative;
+  left: 22%;
+  background-color: red;
+  padding: 20px 40px 20px 40px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
 .post {
   box-sizing: border-box;
   float: left;
@@ -86,6 +96,13 @@ body {
     float: left;
     left: 3%;
     box-sizing: border-box; }
+  .post .time {
+    display: block;
+    position: relative;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #a5a5a5; }
   .post .share {
     display: block; }
     .post .share .pipe {
@@ -128,6 +145,8 @@ body {
   .post.video .title {
     font-size: 27px;
     padding: 12px 0 25px 0; }
+  .post.video .time {
+    display: none; }
   .post.video .hashtags {
     display: block; }
   .post.video .tags {
@@ -150,9 +169,8 @@ body {
     height: 70px; }
   .post.default .name {
     font-size: 27px;
-    color: #ffffff;
+    color: #000000;
     width: calc(100% - 70px);
-    left: 3%;
     margin-top: 12px; }
   .post.default .title {
     font-size: 16px;
@@ -160,9 +178,10 @@ body {
   .post.default .hashtags {
     display: block; }
   .post.default .time {
-    position: relative; }
-  .post.default .tags {
+    position: relative;
     display: block; }
+  .post.default .tags {
+    display: none; }
   .post.default .share {
     display: block; }
 
