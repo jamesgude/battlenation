@@ -255,6 +255,112 @@ body {
 					
 					
 					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					.post {
+						&.list {
+							ul { display:inline-block; }
+							position: relative;
+											.video-play-overlay img { 
+												display:none;
+												}	
+											.video-play-overlay {
+												top: 0;
+												left: 0;
+												width: 80%;
+												height: 100%;
+												z-index: 2;	
+												}	
+											.background-image {
+												padding-top:56%;
+												width:80%;
+												background-size:cover;
+												background-repeat:no-repeat;
+												background-image:url('http://placehold.it/350x200');
+												}
+					
+											.meta { 
+												margin-top:0px;
+												padding-left: 0%;
+												float:left;
+												}
+											.profile {
+												width:100%;
+												padding-top:5%;
+												}
+											.user-image { 
+												width:60px;
+												height:60px;
+												}
+											.name {
+												font-size:20px;
+												color: $header-black;
+												width: calc(100% - 70px);
+												margin-top:0px;
+												left:3%;
+												}
+											.title {
+												font-size:16px;
+												padding:4% 0 2% 2%;
+												left:0%;
+												}
+											.hashtags {
+												display:block;
+												left:2%;
+												
+													}	
+											.time {
+												position:relative;
+												display:none;
+												}	
+											.tags {
+												display:block;
+													}			
+											.share {
+												display:none;
+											}
+										}
+									}
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
 	.post {
 		&.carousel {
 			position: relative;

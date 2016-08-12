@@ -185,6 +185,55 @@ body {
   .post.default .share {
     display: block; }
 
+.post.list {
+  position: relative; }
+  .post.list ul {
+    display: inline-block; }
+  .post.list .video-play-overlay img {
+    display: none; }
+  .post.list .video-play-overlay {
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    z-index: 2; }
+  .post.list .background-image {
+    padding-top: 56%;
+    width: 80%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("http://placehold.it/350x200"); }
+  .post.list .meta {
+    margin-top: 0px;
+    padding-left: 0%;
+    float: left; }
+  .post.list .profile {
+    width: 100%;
+    padding-top: 5%; }
+  .post.list .user-image {
+    width: 60px;
+    height: 60px; }
+  .post.list .name {
+    font-size: 20px;
+    color: #000000;
+    width: calc(100% - 70px);
+    margin-top: 0px;
+    left: 3%; }
+  .post.list .title {
+    font-size: 16px;
+    padding: 4% 0 2% 2%;
+    left: 0%; }
+  .post.list .hashtags {
+    display: block;
+    left: 2%; }
+  .post.list .time {
+    position: relative;
+    display: none; }
+  .post.list .tags {
+    display: block; }
+  .post.list .share {
+    display: none; }
+
 .post.carousel {
   position: relative; }
   .post.carousel .video-play-overlay {
