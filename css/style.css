@@ -188,7 +188,8 @@ body {
 .post.list {
   position: relative; }
   .post.list ul {
-    display: inline-block; }
+    display: inline-block;
+    float: none; }
   .post.list .video-play-overlay img {
     display: none; }
   .post.list .video-play-overlay {

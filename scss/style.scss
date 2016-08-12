@@ -268,8 +268,13 @@ body {
 					
 					.post {
 						&.list {
-							ul { display:inline-block; }
 							position: relative;
+								ul { 
+									display:inline-block;
+									float:none;
+									}
+										li { 
+											}
 											.video-play-overlay img { 
 												display:none;
 												}	
