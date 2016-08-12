@@ -17,6 +17,7 @@
      <!----------------------------- TRENDING CARD POST TYPE --------------------------------------->
      
     <section id="trending" style="padding-top: 10%;">
+    
     </section><!-- END MAIN FEATURED POST -->
      
      

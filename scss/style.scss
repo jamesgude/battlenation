@@ -252,6 +252,68 @@ body {
 							}
 						}
 					}
+					
+					
+					
+	.post {
+		&.carousel {
+			position: relative;
+							.video-play-overlay {
+								display:none;
+								}	
+							.background-image {
+								display:none;
+								}
+							.video-play-overlay img { 
+								display:none;
+								}	
+							.meta { 
+								margin-top:0px;
+								padding-left: 6%;
+								}
+							.profile {
+								width:100%;
+								padding:10% 0 0 0;
+								}
+							.user-image { 
+								width:110px;
+								height:110px;
+								}
+							.name {
+								font-size:14px;
+								color: $header-black;
+								width: 80%;
+								left:2%;
+								margin-top:12px;
+								padding:0 0 10% 0;
+								
+								}
+							.title {
+								font-size:16px;
+								padding:2%;
+								display:none;
+								}
+							.hashtags {
+								display:none;
+								
+									}	
+							.time {
+								position:relative;
+								display:none;
+								}	
+							.tags {
+								display:none;
+									}			
+							.share {
+								display:none;
+							}
+						}
+					}				
+					
+					
+					
+					
+					
 	
 
 			
