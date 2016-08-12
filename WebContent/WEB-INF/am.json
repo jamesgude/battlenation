@@ -1,0 +1,119 @@
+{
+	"resourceDirectory": "_resource" 
+	, "bypassExtensions": "js, css, jst, png, jpg, jpeg, gif, woff, ttf, txt, xml, ico"
+	, "bypassDirectories": "/js/, /img/, /css/, /doubleclick/"
+	, "layoutExtensions": "jsp, htm, html"
+	, "domain":"localhost:8080"
+	, "serverMode":"true"
+	, "httpsOnly" : "false"
+	, "httpsServer" : "https://localhost:8443" 
+	, "initializeScript":"/initializer.jsp"
+	, "xjdbc": "jdbc:sqlserver://192.168.2.2;DatabaseName=am;SelectMethod=cursor;user=ucore;password=ucore;"
+	, "email":{"server":"smtpout.secureserver.net", "auth":"true", "port":"80","username":"bradleygude@businesshaps.com","password":"em2z4z"}
+	, "groups" :[ 
+		{
+			"website":"/api/"
+			, "restricted": "false"
+			, "allowAnonAccess": "true"
+		}
+		, {
+			"website":"/api/appuser/"
+			, "restricted": "false"
+			, "allowAnonAccess": "false"
+		}
+		, {
+			"website":"/schedule/"
+			, "restricted": "false"
+			, "allowAnonAccess": "true"
+		}
+		, {
+			"website":"/secure/"
+			, "restricted": "false"
+			, "allowAnonAccess": "false"
+		}
+	]
+	, "mappings":[
+		{
+			"path":"/api/" 
+			, "defaultFile": "index.jsp"
+			, "api":"true"
+		} ,
+		{
+			"path":"/js/js.core.v1.min.js"
+			, "combineAsFile": "true"
+			, "javascriptCompress": "true"
+			, "combine" : [
+				"/js/jquery-1.8.2.min.js"
+				, "/js/jquery-ui-1.10.2.custom.min.js"
+				, "/js/jst/jst.js"
+				, "/js/data/data.manager.js"
+				, "/js/main.js"
+				, "/js/helper.text/helper.text.js"
+			] 
+		} ,
+		{
+			"path":"/css/layout.core.v1.css"
+			, "combineAsFile": "true"
+			, "javascriptCompress": "false"
+			, "contentType": "text/css"
+			, "combine" : [
+				"/components/post/css/component.css"
+			] 
+		} ,		 
+		{
+			"path":"/css/layout.default.v1.css"
+			, "combineAsFile": "true"
+			, "javascriptCompress": "false"
+			, "contentType": "text/css"
+			, "combine" : [
+				"/_resource/default/layout.default.css"
+			] 
+		} ,		
+		{
+			"path":"/apps/"
+			, "defaultFile": "index.page.jsp"
+			, "api":"true"
+		} ,
+		{
+			"path":"/schedule/"
+			, "defaultFile": "index.page.jsp"
+			, "api":"false"
+		} ,
+		{
+			"path":"/xtemplate/"
+			, "defaultFile": "index.page.jsp"
+		}
+	] 
+	, "resources":[ 
+		{
+			"name":"navigation"
+			, "inRoot":"true" 
+			, "filename": "navigation.jsp"
+		} 
+		, {
+			"name":"section_navigation"
+			, "inRoot":"true"
+			, "filename": "section_navigation.jsp"
+		}
+		, {
+			"name":"template"
+			, "inRoot":"true"
+			, "filename": "template.css" 
+		}
+	]
+	, "syncs":[
+		{
+			"path": "com.businesshaps.oi.DataObject"
+			, "path": "com.businesshaps.schedule.WorkScheduleEntry"
+		}		
+	]
+	
+	, "apis": [
+		{
+			"name": "article"
+			, "displayName": "Articles"
+			, "defaultItemsPerPage": "10"
+		}
+		 
+	] 
+}

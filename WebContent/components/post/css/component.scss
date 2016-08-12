@@ -1,0 +1,407 @@
+/* Sass Document */
+
+/************* GLOBAL **************/
+
+/* COLORS */
+$primary-red: #e8221a;
+$background-feed: #ececec;
+$background-blue: #2b2d32;
+$card-color: #ffffff;
+$header-white: #ffffff;
+$header-black: #000000;
+$time: #a5a5a5;
+$hashtag: #898989;
+$pipe: #e2e2e2;
+$post-overlay: rgba(255,0,0,.5);
+$button: rgba(255,0,0,1);
+
+/* FONTS */
+
+
+
+/********************************************************************/
+
+body {
+	font-size: 14px;	
+	font-family: arial;
+	margin: 0;
+	padding: 0;
+	background-color:$background-feed;
+		section {
+			float: left;
+			position: relative;
+			width: 100%;	
+			}
+		}
+		
+.loadMorePosts { 
+	position:relative; 
+	left:22%; 
+	background-color:$button; 
+	padding:20px 40px 20px 40px; 
+	color:#fff; 
+	text-decoration:none; 
+	text-transform:uppercase; 
+	letter-spacing:1px;
+	}
+	
+/*******************************************************************************/	
+/****************************** GLOBAL POST ************************************/	
+/*******************************************************************************/
+	
+	.post {
+		box-sizing: border-box;
+		float: left;
+		width: 100%;
+		background-color:$card-color;
+			ul, li {
+				list-style-type: none;
+				float: none;
+				padding: 0;
+				margin: 0;
+				position: relative;
+				}
+				.video-play-overlay {
+						position: absolute;
+						top: 0;
+						left: 0;
+						background-color: $post-overlay;
+						width: 100%;
+						height: 100%;
+						z-index: 2;	
+						}	
+					.background-image {
+						padding-top:56%;
+						background-size:cover;
+						background-repeat:no-repeat;
+						background-image:url('http://placehold.it/350x200');
+						}
+					.video-play-overlay img { 
+						max-width:80px; 
+						position:relative; 
+						top: calc(50% - 50px); 
+						left: calc(50% - 45px);
+						}	
+					.meta { 
+						margin-top:-43px;
+						padding-left: 6%;
+						position:relative;
+						}
+					.user-image { 
+						background: black;
+						-moz-border-radius: 50px;
+						-webkit-border-radius: 50px;
+						border-radius: 50px;
+						position:relative;
+						float:left;
+						box-sizing:border-box;
+						z-index:3;
+							}
+					.name {
+						position:relative;
+						z-index:3;
+						float:left;
+						box-sizing:border-box;
+							}
+					.title {
+						position:relative;
+						clear:both;
+						width:100%;
+						box-sizing:border-box;
+							}
+					.hashtags {
+						font-size:13px;
+						color: $hashtag;
+						letter-spacing:1px;
+						position:relative;
+						padding-bottom:20px;
+						box-sizing:border-box;
+						display:block;
+							}	
+					.tags {
+						color:$header-white;
+						background-color:black;
+						position:relative;
+						padding:6px;
+						width:50px;
+						z-index:3;
+						text-align:center;
+						text-transform:uppercase;
+						font-size:10px;
+						float:left;
+						left: 3%;
+						box-sizing:border-box;
+							}	
+					.time {
+						display:block;
+						position:relative;
+						font-size:10px;
+						text-transform:uppercase;
+						letter-spacing:1px;
+						color:$time;
+						}				
+					.share {
+						display:block;
+							.pipe {
+								height:1px; 
+								width:95%;
+								text-align:center;
+								background-color: $pipe;
+								margin-bottom:2%;
+								}
+							.hit {
+								float:left;
+								font-size:12px;
+								width:33%;
+								text-align:center;
+								}
+							.comment {
+								float:left;
+								font-size:12px;
+								width:33%;
+								text-align:center;
+								}
+							.share {
+								float:left;
+								font-size:12px;
+								width:33%;
+								text-align:center;		
+							}
+						}	
+					}
+	
+/*******************************************************************************/	
+/****************************** DEFAULT POST ***********************************/	
+/*******************************************************************************/
+	
+	.post {
+		&.default {
+			position: relative;
+							.video-play-overlay img { 
+								display:none;
+								}	
+							.meta { 
+								margin-top:0px;
+								padding-left: 6%;
+								}
+							.profile {
+								width:100%;
+								padding-top:5%;
+								}
+							.user-image { 
+								width:70px;
+								height:70px;
+								}
+							.name {
+								font-size:27px;
+								color: $header-black;
+								width: calc(100% - 70px);
+								margin-top:12px;
+								}
+							.title {
+								font-size:16px;
+								padding:2%;
+								}
+							.hashtags {
+								display:block;
+									}	
+							.time {
+								position:relative;
+								display:block;
+								}	
+							.tags {
+								display:none;
+									}			
+							.share {
+								display:block;
+							}
+						}
+					}		
+					
+/*******************************************************************************/	
+/****************************** VIDEO POST *************************************/	
+/*******************************************************************************/
+	
+		.post{
+			&.video {
+				position: relative;
+						.video-play-overlay img { 
+							display:block;
+							}	
+						.meta { 
+							margin-top:-43px;
+							padding-left: 6%;
+							}
+						.user-image { 
+							width:90px;
+							height:90px;
+							}
+						.name {
+							font-size:27px;
+							color: $header-white;
+							width: calc(98% - 90px);
+							left: 3%;
+							}
+						.title {
+							font-size:27px;
+							padding:12px 0 25px 0;
+							}
+						.time {
+							display:none;
+							}	
+						.hashtags {
+							display:block;
+								}	
+						.tags {
+							display:block;
+								}			
+						.share {
+							display:block;
+						}
+					}
+				}
+					
+/*******************************************************************************/	
+/****************************** LIST POST **************************************/	
+/*******************************************************************************/
+					
+					.post {
+						&.list {
+							position: relative;
+								ul { 
+									display:inline-block;
+									float:left;
+									width:100%;
+									}
+										li { 
+											width:50%;
+											float:left;
+											}
+											.video-play-overlay img { 
+												display:block;
+												width:30%;
+												top:30%;
+												left:35%;
+												}	
+											.video-play-overlay {
+												top: 0;
+												left: 0;
+												width: 90%;
+												height: 100%;
+												z-index: 2;	
+												}	
+											.background-image {
+												padding-top:72%;
+												width:90%;
+												background-size:cover;
+												background-repeat:no-repeat;
+												background-image:url('http://placehold.it/350x200');
+												}
+											.meta { 
+												margin-top:10px;
+												padding-left: 0%;
+												float:left;
+												}
+											.profile {
+												width:100%;
+												padding-top:5%;
+												}
+											.user-image { 
+												width:60px;
+												height:60px;
+												}
+											.name {
+												font-size:12px;
+												color: $header-black;
+												width: calc(100% - 70px);
+												margin-top:12px;
+												left:3%;
+												}
+											.title {
+												font-size:16px;
+												padding:4% 0 2% 2%;
+												left:0%;
+												}
+											.hashtags {
+												font-size:10px;
+												display:block;
+												left:2%;
+													}	
+											.time {
+												position:relative;
+												display:none;
+												}	
+											.tags {
+												display:block;
+													}			
+											.share {
+												display:none;
+											}
+										}
+									}
+					
+/*******************************************************************************/	
+/***************************** CAROUSEL POST ***********************************/	
+/*******************************************************************************/
+
+	.post {
+		&.carousel {
+			position: relative;
+				ul{
+					width:100%;
+					float:left;
+					display:inline-block;
+				}
+					li {
+						width:40%;
+						float:left;	
+					}
+							.video-play-overlay {
+								display:none;
+								}	
+							.background-image {
+								display:none;
+								}
+							.video-play-overlay img { 
+								display:none;
+								}	
+							.meta { 
+								margin-top:0px;
+								padding-left: 6%;
+								}
+							.profile {
+								width:100%;
+								padding:10% 0 0 0;
+								}
+							.user-image { 
+								width:110px;
+								height:110px;
+								}
+							.name {
+								font-size:14px;
+								color: $header-black;
+								width: 80%;
+								left:2%;
+								margin-top:12px;
+								padding:0 0 10% 0;
+								}
+							.title {
+								font-size:16px;
+								padding:2%;
+								display:none;
+								}
+							.hashtags {
+								display:none;
+									}	
+							.time {
+								position:relative;
+								display:none;
+								}	
+							.tags {
+								display:none;
+									}			
+							.share {
+								display:none;
+							}
+						}
+					}			
