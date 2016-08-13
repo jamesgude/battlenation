@@ -1,0 +1,123 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background-color: #2b2d32;
+  color: #ccc; }
+  html a, body a {
+    color: #ccc;
+    text-decoration: none; }
+  html .header, body .header {
+    float: left;
+    width: 100%;
+    position: relative;
+    height: 100px;
+    background-color: #24262a;
+    border-bottom: 40px solid #2b2d32;
+    text-transform: uppercase;
+    font-weight: bold; }
+    html .header ul, html .header li, body .header ul, body .header li {
+      list-style-type: none;
+      float: left;
+      padding: 0;
+      margin: 0; }
+    html .header nav, body .header nav {
+      float: left;
+      position: relative;
+      width: 100%;
+      transform: translateY(-50%);
+      top: 50%; }
+      html .header nav .primary li, body .header nav .primary li {
+        padding: 0 40px; }
+      html .header nav .secondary, body .header nav .secondary {
+        float: right;
+        margin-right: 50px; }
+        html .header nav .secondary li, body .header nav .secondary li {
+          padding: 0 20px 0 0;
+          color: #fff; }
+          html .header nav .secondary li a, body .header nav .secondary li a {
+            color: #fff; }
+          html .header nav .secondary li.or, body .header nav .secondary li.or {
+            width: 60px;
+            padding: 0;
+            margin: 0;
+            content: ""; }
+            html .header nav .secondary li.or div, body .header nav .secondary li.or div {
+              font-size: 10px;
+              background-color: #2b2d32;
+              font-weight: normal;
+              padding: 10px;
+              border-radius: 50%;
+              position: absolute;
+              top: -50%; }
+              html .header nav .secondary li.or div:after, body .header nav .secondary li.or div:after {
+                content: "";
+                left: 50%;
+                position: absolute;
+                width: 1px;
+                background-color: #2b2d32;
+                height: 100px;
+                top: -100%; }
+  html .leftbar, body .leftbar {
+    float: left;
+    width: 140px;
+    position: fixed;
+    margin-top: 150px;
+    box-sizing: border-box;
+    padding: 20px; }
+    html .leftbar .carousel, body .leftbar .carousel {
+      overflow: hidden;
+      white-space: nowrap; }
+      html .leftbar .carousel ul li, body .leftbar .carousel ul li {
+        float: none;
+        display: inline-block;
+        margin-left: -55%;
+        transform: none;
+        left: 0; }
+      html .leftbar .carousel ul li:first-child, body .leftbar .carousel ul li:first-child {
+        margin-left: 0; }
+    html .leftbar ul, body .leftbar ul {
+      list-style-type: none;
+      width: 100%; }
+    html .leftbar ul, html .leftbar li, body .leftbar ul, body .leftbar li {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      float: left; }
+    html .leftbar li, body .leftbar li {
+      margin-bottom: 20px;
+      border-radius: 50%;
+      border: 2px solid #ddd;
+      height: 60px;
+      width: 60px;
+      background-color: red;
+      text-align: center;
+      transform: translatex(-50%);
+      left: 50%; }
+    html .leftbar .items, body .leftbar .items {
+      position: relative;
+      width: 100%;
+      float: left;
+      border-top: 1px solid #aaa;
+      padding-top: 20px;
+      margin-bottom: 40px; }
+  html .content-body, body .content-body {
+    float: left;
+    width: calc(100% - 580px);
+    position: relative;
+    margin-left: 140px;
+    background-color: #fff;
+    box-siing: border-box;
+    padding: 70px;
+    color: initial; }
+  html .rightbar, body .rightbar {
+    float: left;
+    width: 300px;
+    position: relative;
+    right: 0;
+    box-sizing: border-box;
+    padding: 20px; }
+  html .footer, body .footer {
+    float: left;
+    width: 100%;
+    position: relative; }

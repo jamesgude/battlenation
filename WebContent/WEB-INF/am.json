@@ -58,6 +58,8 @@
 			, "contentType": "text/css"
 			, "combine" : [
 				"/components/post/css/component.css"
+				,"/components/header/css/component.css"
+				,"/_resource/page/page.css"
 			] 
 		} ,		 
 		{
