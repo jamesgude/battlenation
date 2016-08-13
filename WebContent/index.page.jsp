@@ -1,6 +1,7 @@
  <div class="feed">    
      <!------------------------- MAIN FEATURED POST ------------------------------->
     <section id="featured">
+
     	<jsp:include page="/components/post/post.jsp" />
      </section><!-- END MAIN FEATURED POST -->
      
@@ -12,6 +13,11 @@
     <jsp:include page="/components/post/post.jsp" />
     <jsp:include page="/components/post/post.jsp" />
     </section><!-- END MAIN FEATURED POST -->
+     
+     
+     
+  
+     
      <a href="#" class="loadMorePosts">Load More Posts</a>
      
      
