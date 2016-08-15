@@ -3,7 +3,9 @@ html, body {
   padding: 0;
   position: relative;
   background-color: #2b2d32;
-  color: #ccc; }
+  color: #ccc;
+  font-family: "Montserrat",Helvetica,sans-serif;
+  font-weight: 100; }
   html a, body a {
     color: #ccc;
     text-decoration: none; }
@@ -21,14 +23,26 @@ html, body {
       float: left;
       padding: 0;
       margin: 0; }
+    html .header .logo, body .header .logo {
+      background-image: url(/clientlibs/assets/Logo.png);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      width: 225px;
+      height: 30px;
+      position: absolute;
+      margin-left: 50px;
+      top: 50%;
+      transform: translatey(-50%); }
     html .header nav, body .header nav {
       float: left;
       position: relative;
       width: 100%;
       transform: translateY(-50%);
       top: 50%; }
-      html .header nav .primary li, body .header nav .primary li {
-        padding: 0 40px; }
+      html .header nav .primary, body .header nav .primary {
+        margin-left: 300px; }
+        html .header nav .primary li, body .header nav .primary li {
+          padding: 0 40px; }
       html .header nav .secondary, body .header nav .secondary {
         float: right;
         margin-right: 50px; }
