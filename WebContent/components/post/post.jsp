@@ -1,4 +1,4 @@
- <article class="post default">
+ <article class="post">
             <ul>
                 <li>
                     <div class="background-image"></div>

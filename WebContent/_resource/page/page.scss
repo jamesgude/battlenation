@@ -5,7 +5,7 @@ html, body {
 	padding: 0;
 	position: relative;
 	background-color: $bodyColor;
-	color: #ccc; 
+	color: #ccc;  
 	a {
 		color: #ccc;
 		text-decoration: none;
@@ -248,3 +248,26 @@ html, body {
 	}
 
 }
+ 
+
+
+
+
+
+
+
+
+
+.rightbar {
+	.post {
+		background-color:#2b2d32;
+			.name {
+				color:#e8221a;
+				font-size:12px;
+				}
+			.hashtag { display:none; }
+		}
+	}
+
+
+

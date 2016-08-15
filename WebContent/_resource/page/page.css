@@ -194,3 +194,11 @@ html, body {
     html .button.gray, body .button.gray {
       background-color: #444;
       color: #fff; }
+
+.rightbar .post {
+  background-color: #2b2d32; }
+  .rightbar .post .name { 
+    color: #e8221a;
+    font-size: 12px; }
+  .rightbar .post .hashtag {
+    display: none; }
