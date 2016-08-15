@@ -1,9 +1,7 @@
 <header class="header">
 	<nav class="navigation">
+		<div class="logo"></div>
 		<ul class="primary">
-			<li>
-				[Logo]
-			</li>
 			<li>
 				Community
 			</li>

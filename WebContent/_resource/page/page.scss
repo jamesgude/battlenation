@@ -5,7 +5,9 @@ html, body {
 	padding: 0;
 	position: relative;
 	background-color: $bodyColor;
-	color: #ccc;  
+	color: #ccc; 
+	font-family: "Montserrat",Helvetica,sans-serif;
+	font-weight: 100; 
 	a {
 		color: #ccc;
 		text-decoration: none;
@@ -25,7 +27,17 @@ html, body {
 			padding: 0;
 			margin: 0;
 		}
-		
+		.logo {
+			background-image: url(/clientlibs/assets/Logo.png);
+			background-size: 100%;
+			background-repeat: no-repeat;
+			width: 225px;
+			height: 30px;
+			position: absolute;
+			margin-left: 50px;
+			top: 50%;
+			transform: translatey(-50%);
+		}
 		nav {
 			float: left;
 			position: relative;
@@ -33,6 +45,7 @@ html, body {
 			transform: translateY(-50%);
 			top: 50%;
 			.primary {
+				margin-left: 300px;
 				li {
 					padding: 0 40px;
 				}
