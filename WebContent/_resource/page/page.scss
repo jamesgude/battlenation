@@ -99,6 +99,7 @@ html, body {
 		border-top: 40px solid $bodyColor;
 	}
 	.leftbar {
+		margin-top: -50px;
 		background-color: $bodyColor;
 		z-index: 4;
 		float: left;
@@ -109,6 +110,7 @@ html, body {
 		overflow-y: scroll;
 		box-sizing: border-box;
 		padding: 20px;
+		padding-top: 70px;
 		transition: width 300ms ease; 
 		&:hover {
 			width: 300px; 
