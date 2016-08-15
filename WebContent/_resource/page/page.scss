@@ -1,4 +1,5 @@
 $bodyColor: #2b2d32;
+$headerHeight: 100px;
 html, body {
 	margin: 0;
 	padding: 0;
@@ -13,7 +14,7 @@ html, body {
 		float: left;
 		width: 100%;
 		position: relative;
-		height: 100px;
+		height: $headerHeight;
 		background-color: #24262a;
 		border-bottom: 40px solid $bodyColor;
 		text-transform: uppercase;
@@ -64,7 +65,7 @@ html, body {
 								position: absolute;
 								width: 1px;
 								background-color: $bodyColor;
-								height: 100px;
+								height: $headerHeight;
 								top: -100%;
 							}
 						}
@@ -80,7 +81,10 @@ html, body {
 		float: left;
 		width: 140px;
 		position: fixed;
-		margin-top: 150px;
+		height: 100%;
+		max-height: 100%;
+		overflow-y: scroll;
+		margin-top: $headerHeight + 50px;
 		box-sizing: border-box;
 		padding: 20px;
 		.carousel {
@@ -146,11 +150,101 @@ html, body {
 		position: relative;
 		right: 0; 
 		box-sizing: border-box;
-		padding: 20px;
+		padding: 0 15px 10px 12px;
+		.promoted-post {
+			box-sizing: border-box;
+			padding: 15px;
+			float: left;
+			position: relative;
+			width: 100%;
+			.logo {
+				color: #fff;
+				float: left;
+				position: relative;
+				.promoted-text {
+					font-size: 10px;
+					color: #bbb;
+					text-transform: uppercase;
+				}	
+			}
+			.button {
+				float: right;
+				position: relative;
+			}
+		}
+		
 	}
 	.footer {
+		line-height: 80%;
 		float: left;
-		width: 100%;
+		width: calc(100% - 440px);  
 		position: relative;
+		box-sizing: border-box;
+		margin-left: 140px;
+		padding: 20px; 
+		a {
+			color: #ccc;
+		}
+		.share {
+			float: right;
+		}
+		ul {
+			list-style-type: none;
+			float: left;
+			width: auto;
+			margin: 0;
+			padding: 0;
+			position: relative;
+			li {
+				float: left;
+				padding: 0;
+				margin: 0;
+				width: auto;
+				border-right: 1px solid #ccc;
+				&:first-child {
+					padding-left: 0;
+					margin-left: 0;
+				}
+				&:last-child {
+					border-right: 0;
+				}
+			}
+		}
+		.footer-navigation {
+			text-transform: uppercase;
+			margin-bottom: 80px;
+			li {
+				padding: 0 25px;
+			}
+			.share {
+				float: right;
+			}
+		}
+		.copyright {
+			color: #fff;
+			float: left;
+			width: 100%;
+			margin-bottom: 20px;
+			font-weight: bold;
+			font-size: 120%;
+		}
+		.terms {
+			float: left;
+			width: 100%; 
+			padding-bottom: 100px;
+			li {
+				padding: 0 15px;
+			}
+		}
 	}
+	.button {
+		padding: 10px 20px;
+		font-size: 10px;
+		text-transform: uppercase;
+		&.gray {
+			background-color: #444;
+			color: #fff;
+		}		
+	}
+
 }
