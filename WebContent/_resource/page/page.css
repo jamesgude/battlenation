@@ -80,6 +80,7 @@ html, body {
     margin-top: 110px;
     border-top: 40px solid #2b2d32; }
   html .leftbar, body .leftbar {
+    margin-top: -50px;
     background-color: #2b2d32;
     z-index: 4;
     float: left;
@@ -90,6 +91,7 @@ html, body {
     overflow-y: scroll;
     box-sizing: border-box;
     padding: 20px;
+    padding-top: 70px;
     transition: width 300ms ease; }
     html .leftbar:hover, body .leftbar:hover {
       width: 300px; }

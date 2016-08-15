@@ -25,7 +25,7 @@ html, body {
 			list-style-type: none;
 			float: left;
 			padding: 0;
-			margin: 0;
+			margin: 0;  
 		}
 		.logo {
 			background-image: url(/clientlibs/assets/Logo.png);
@@ -290,19 +290,25 @@ html, body {
 	}
  
 } 
- 
-.rightbar {
+
+
+ .rightbar {
 	.post {
-		padding-bottom:4%;
-		background-color:#2b2d32;
+		background-color:#2b2d32;  
+		.video-play-overlay img{ 
+				display:none;
+			}
 			.name {
-				color:#e8221a;
+				color:#e8221a; 
 				font-size:12px;
 				}
-			.hashtag {  
+			.hashtags {  
 				display:none; 
 		   	}
-			.tags { display:none; }
-		} 
+			.tags {
+				display:none;   
+				}
+		}  
 	}
+
 
