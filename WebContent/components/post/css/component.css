@@ -134,35 +134,35 @@ body {
 /*******************************************************************************/
 /****************************** DEFAULT POST ***********************************/
 /*******************************************************************************/
-.post.default {
+.post {
   position: relative; }
-  .post.default .video-play-overlay img {
+  .post .video-play-overlay img {
     display: none; }
-  .post.default .meta {
+  .post .meta {
     margin-top: 0px;
     padding-left: 6%; }
-  .post.default .profile {
+  .post .profile {
     width: 100%;
     padding-top: 5%; }
-  .post.default .user-image {
+  .post .user-image {
     width: 70px;
     height: 70px; }
-  .post.default .name {
+  .post .name {
     font-size: 27px;
     color: #000000;
     width: calc(100% - 70px);
     margin-top: 12px; }
-  .post.default .title {
+  .post .title {
     font-size: 16px;
     padding: 2%; }
-  .post.default .hashtags {
+  .post .hashtags {
     display: block; }
-  .post.default .time {
+  .post .time {
     position: relative;
     display: block; }
-  .post.default .tags {
+  .post .tags {
     display: none; }
-  .post.default .share {
+  .post .share {
     display: block; }
 
 /*******************************************************************************/
@@ -303,5 +303,3 @@ body {
     display: none; }
   .post.carousel .share {
     display: none; }
-
-/*# sourceMappingURL=component.css.map */

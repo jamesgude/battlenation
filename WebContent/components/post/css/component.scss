@@ -23,10 +23,10 @@ $button: rgba(255,0,0,1);
 
 body {
 	font-size: 14px;	
-	font-family: arial;
+	font-family: arial; 
 	margin: 0;
 	padding: 0;
-	background-color:$background-feed;
+	background-color:$background-feed;  
 		section {
 			float: left;
 			position: relative;
@@ -175,7 +175,6 @@ body {
 /*******************************************************************************/
 	
 	.post {
-		&.default {
 			position: relative;
 							.video-play-overlay img { 
 								display:none;
@@ -216,7 +215,7 @@ body {
 								display:block;
 							}
 						}
-					}		
+						
 					
 /*******************************************************************************/	
 /****************************** VIDEO POST *************************************/	
