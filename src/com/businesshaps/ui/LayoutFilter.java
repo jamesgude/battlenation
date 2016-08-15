@@ -209,8 +209,9 @@ public class LayoutFilter implements Filter {
 				} else {
 					fileChanged = true;
 				}
-
-				file_last_mod.put(combineUri, new File(resp.getFilePath()).lastModified());
+				if ( resp!=null&&new File(resp.getFilePath())!=null) {
+					file_last_mod.put(combineUri, new File(resp.getFilePath()).lastModified());
+				}
 			}
 		}
 
