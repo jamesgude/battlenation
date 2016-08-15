@@ -13,12 +13,12 @@ html, body {
 		text-decoration: none;
 	}
 	.header {
+		z-index: 3;
 		float: left;
 		width: 100%;
-		position: relative;
+		position: fixed;
 		height: $headerHeight;
 		background-color: #24262a;
-		border-bottom: 40px solid $bodyColor;
 		text-transform: uppercase;
 		font-weight: bold;
 		ul, li {
@@ -90,16 +90,44 @@ html, body {
 		}
 		
 	}
+	.page-body {
+		z-index: 2;
+		float: left;
+		width: 100%;
+		position: relative;
+		margin-top: $headerHeight + 10px;
+		border-top: 40px solid $bodyColor;
+	}
 	.leftbar {
+		background-color: $bodyColor;
+		z-index: 4;
 		float: left;
 		width: 140px;
 		position: fixed;
 		height: 100%;
-		max-height: 100%;
+		max-height: 100%; 
 		overflow-y: scroll;
-		margin-top: $headerHeight + 50px;
 		box-sizing: border-box;
 		padding: 20px;
+		transition: width 300ms ease; 
+		&:hover {
+			width: 300px; 
+			.carousel {
+				ul {
+					li {
+						float: left;
+						margin-left: 0; 
+					}
+				}
+			}
+			.items {
+				li {
+					left: auto;
+					transform: none;
+					white-space: none;
+				}
+			}
+		}
 		.carousel {
 			overflow: hidden;
 			white-space: nowrap;
@@ -141,7 +169,7 @@ html, body {
 			position: relative;
 			width: 100%;
 			float: left;
-			border-top: 1px solid #aaa;
+			border-top: 1px solid #595959;
 			padding-top: 20px;
 			margin-bottom: 40px;
 		}
@@ -156,6 +184,7 @@ html, body {
 		box-siing: border-box;
 		padding: 70px;
 		color: initial;
+		z-index: 3;
 	}
 	.rightbar {
 		float: left; 
@@ -261,13 +290,6 @@ html, body {
 	}
 
 }
- 
-
-
-
-
-
-
 
 .rightbar {
 	.post {
@@ -283,8 +305,4 @@ html, body {
 			.tags { display:none; }
 		} 
 	}
-
- 
-
-
 

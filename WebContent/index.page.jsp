@@ -18,11 +18,6 @@
      
   
      
-     <a href="#" class="loadMorePosts">Load More Posts</a>
-     
-     
-     
-     
      
     
 </div> <!-- END FEED -->
